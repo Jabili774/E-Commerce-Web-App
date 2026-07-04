@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout | ShopEase</title>
+
+<link rel="stylesheet" href="css/cart.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+.checkout{
+width:90%;
+max-width:1000px;
+margin:40px auto;
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:30px;
+}
+
+.checkout-form,
+.order-summary{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.checkout-form h2,
+.order-summary h2{
+margin-bottom:20px;
+}
+
+.checkout-form input,
+.checkout-form textarea,
+.checkout-form select{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:16px;
+}
+
+.checkout-form button{
+width:100%;
+padding:15px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:8px;
+font-size:17px;
+cursor:pointer;
+}
+
+.summary-item{
+display:flex;
+justify-content:space-between;
+margin:10px 0;
+}
+
+.total{
+font-size:22px;
+font-weight:bold;
+margin-top:20px;
+border-top:2px solid #ddd;
+padding-top:15px;
+}
+
+@media(max-width:768px){
+
+.checkout{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<h2>ShopEase</h2>
+
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="products.html">Products</a>
+
+<a href="cart.html">Cart</a>
+
+</nav>
+
+</header>
+
+<div class="checkout">
+
+<div class="checkout-form">
+
+<h2>Shipping Details</h2>
+
+<form id="checkoutForm">
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="tel" placeholder="Phone Number" required>
+
+<textarea rows="4" placeholder="Shipping Address" required></textarea>
+
+<select required>
+
+<option value="">Select Payment Method</option>
+
+<option>Credit Card</option>
+
+<option>Debit Card</option>
+
+<option>UPI</option>
+
+<option>Cash on Delivery</option>
+
+</select>
+
+<button type="submit">
+
+Place Order
+
+</button>
+
+</form>
+
+</div>
+
+<div class="order-summary">
+
+<h2>Order Summary</h2>
+
+<div id="summaryItems"></div>
+
+<h3 id="summaryTotal" class="total">
+
+Total : $0
+
+</h3>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>© 2026 ShopEase. All Rights Reserved.</p>
+
+</footer>
+
+<script src="js/checkout.js"></script>
+
+</body>
+
+</html>
