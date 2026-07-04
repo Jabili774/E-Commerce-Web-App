@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products | ShopEase</title>
+
+    <link rel="stylesheet" href="css/products.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <div class="logo">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <h2>ShopEase</h2>
+
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="products.html" class="active">Products</a>
+
+        <a href="cart.html">
+
+            Cart
+
+            <span id="cart-count">0</span>
+
+        </a>
+
+        <a href="login.html">Login</a>
+
+    </nav>
+
+</header>
+
+<!-- ================= PAGE TITLE ================= -->
+
+<section class="page-title">
+
+    <h1>Our Products</h1>
+
+    <p>Browse our latest collection</p>
+
+</section>
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search-section">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search products...">
+
+</section>
+
+<!-- ================= FILTER ================= -->
+
+<section class="filter-section">
+
+    <button class="filter-btn active" data-category="All">
+        All
+    </button>
+
+    <button class="filter-btn" data-category="Electronics">
+        Electronics
+    </button>
+
+    <button class="filter-btn" data-category="Fashion">
+        Fashion
+    </button>
+
+    <button class="filter-btn" data-category="Shoes">
+        Shoes
+    </button>
+
+    <button class="filter-btn" data-category="Watches">
+        Watches
+    </button>
+
+    <button class="filter-btn" data-category="Home">
+        Home
+    </button>
+
+    <button class="filter-btn" data-category="Beauty">
+        Beauty
+    </button>
+
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="products">
+
+    <div id="productContainer" class="product-grid">
+
+        <!-- Products will appear here dynamically -->
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h2>ShopEase</h2>
+
+    <p>Your One Stop Online Shopping Destination</p>
+
+    <div class="social">
+
+        <i class="fab fa-facebook"></i>
+
+        <i class="fab fa-instagram"></i>
+
+        <i class="fab fa-twitter"></i>
+
+        <i class="fab fa-linkedin"></i>
+
+    </div>
+
+    <p>© 2026 ShopEase. All Rights Reserved.</p>
+
+</footer>
+
+<script src="js/data.js"></script>
+
+<script src="js/products.js"></script>
+
+</body>
+
+</html>
